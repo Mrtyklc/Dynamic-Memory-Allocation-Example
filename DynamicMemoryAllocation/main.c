@@ -63,5 +63,9 @@ int main(int argc, char *argv[]) {
 	printf("Matris:\n");
 	diziyaz(Matris,satirSayisi,sutunSayisi);
 	dizikontrol(Matris,satirSayisi,sutunSayisi);
+	for(i=0;i<satirSayisi;i++){
+		free(Matris[i]);
+	}	
+	free(Matris);
 	return 0;
 }
